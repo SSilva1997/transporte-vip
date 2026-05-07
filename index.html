@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Transporte Executivo VIP</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#07111f;
+    color:white;
+}
+
+/* MENU */
+
+header{
+    background:#0b1627;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#22c55e;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#22c55e;
+}
+
+.btn-menu{
+    background:#22c55e;
+    color:black;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-menu:hover{
+    transform:scale(1.05);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:140px 20px 80px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:25px;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
+    color:#e2e2e2;
+}
+
+.cta{
+    display:inline-block;
+    background:#22c55e;
+    color:black;
+    text-decoration:none;
+    padding:18px 35px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.cta:hover{
+    transform:scale(1.05);
+}
+
+/* SERVIÇOS */
+
+.servicos{
+    padding:90px 20px;
+    background:#0d1726;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.titulo{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111c2d;
+    padding:30px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    color:#22c55e;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    line-height:1.7;
+    color:#ddd;
+}
+
+/* CONTATO */
+
+.contato{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.contato p{
+    font-size:20px;
+    margin-bottom:35px;
+    color:#ddd;
+}
+
+.email{
+    margin-top:30px;
+    font-size:18px;
+    color:#22c55e;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b1627;
+    text-align:center;
+    padding:25px;
+    color:#aaa;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .titulo{
+        font-size:32px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+Transporte VIP
+</div>
+
+<nav class="menu">
+<a href="#inicio">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<a class="btn-menu"
+href="https://wa.me/5519991412014"
+target="_blank">
+
+Solicitar
+
+</a>
+
+</div>
+
+</header>
+
+<!-- HOME -->
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h1>
+Conforto, Segurança e Pontualidade
+</h1>
+
+<p>
+
+Trabalhamos com viagens particulares para oferecer aos passageiros um serviço exclusivo, pontual e com preço justo.
+
+Realizamos trajetos por toda a região de São Paulo, incluindo aeroportos, rodoviárias, trajetos de rotina, escolas, universidades, shoppings, eventos e viagens corporativas.
+
+Contamos com 2 opções de veículos que atendem todas as normas de segurança, direção defensiva, higienização completa e revisões feitas de forma pontual, garantindo conforto e tranquilidade aos passageiros.
+
+Todos os usuários são assegurados.
+
+Temos 6 anos de experiência no transporte executivo e buscamos melhorar a cada dia para manter nossos clientes satisfeitos.
+
+</p>
+
+<a class="cta"
+href="https://wa.me/5519991412014?text=Olá,%20quero%20cotar%20meu%20trajeto"
+target="_blank">
+
+Cote seu trajeto através do nosso WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<!-- SERVIÇOS -->
+
+<section class="servicos" id="servicos">
+
+<div class="container">
+
+<h2 class="titulo">
+Nossos Serviços
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Aeroportos</h3>
+<p>
+Transporte executivo com pontualidade para aeroportos da região de São Paulo.
+</p>
+</div>
+
+<div class="card">
+<h3>Rodoviárias</h3>
+<p>
+Viagens seguras e confortáveis para rodoviárias e terminais.
+</p>
+</div>
+
+<div class="card">
+<h3>Viagens Corporativas</h3>
+<p>
+Atendimento profissional para executivos e empresas.
+</p>
+</div>
+
+<div class="card">
+<h3>Rotina e Escolas</h3>
+<p>
+Trajetos diários com segurança para escolas, universidades e compromissos.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTATO -->
+
+<section class="contato" id="contato">
+
+<h2 class="titulo">
+Contato
+</h2>
+
+<p>
+Entre em contato agora mesmo e solicite seu orçamento.
+</p>
+
+<a class="cta"
+href="https://wa.me/5519991412014"
+target="_blank">
+
+Falar no WhatsApp
+
+</a>
+
+<div class="email">
+Email: thallysborges350@gmail.com
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Transporte VIP - Todos os direitos reservados.
+
+</footer>
+
+</body>
+</html>
